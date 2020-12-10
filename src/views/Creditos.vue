@@ -3,37 +3,27 @@
     <v-flex xs12 md6 pt-4>
       <v-card height="100%">
         <v-card-text class="px-4">
+          <h4>Auspiciadores</h4>
           <p>
-            Este app está en línea gracias al auspicio de
-            <a href="https://www.transparencia.org.pe/"
-              >ASOCIACIÓN CIVIL TRANSPARENCIA</a
-            >
-            y a la generosa donación de amig@s. Para ver la lista responsables,
-            aportantes, colaboradores y más información sobre los filtros,
-            revisa aquí. Esta plataforma fue iniciada por José Incio y ahora
-            cuenta con much@s colaboradores Cualquier error con la data escribe
-            a:
-            <a href="mailto:" target="_top">jincio@gmail.com</a>
+            Este app está en línea gracias al auspicio de:
+            <ul>
+              <li> Fundación Friedrich Naumann</li>
+              <li> Redes </li>
+              <li> IDEA Internacional </li>
+            </ul>
+            Esta plataforma fue iniciada por José Incio y ahora
+            cuenta con much@s colaboradores. Cualquier error/sugerencia o problema escríbenos. 
           </p>
-          <h4>Donantes:</h4>
-          <ul>
-            <li>Angelina Cotler (@CotlerAngelina)</li>
-            <li>Javier Tarrillo (@jtarrillov)</li>
-            <li>Eliana Carlin (@ElianaCarlin)</li>
-            <li>Ricardo Moran (@RicardoMoran)</li>
-            <li>Michele Gabriela Fernandez (@@La_micha)</li>
-          </ul>
+          <h4>Información y código</h4>
+          <p>
+            Para mayor información sobre la aplicación, filtros, e información ingresa aquí
+          </P>
           <h4>Desarrolladores:</h4>
           <h5>Vue version</h5>
           <ul>
             <li>Luis Salas (Github: zettai )</li>
             <li>Antonio Cucho (Github: antoniocuga )</li>
-          </ul>
-          <h5>Shiny version</h5>
-          <ul>
-            <li>José Incio (@jlincio)</li>
-            <li>Malena Maguina (Github: malenamaguina)</li>
-            <li>Samuel Calderon (Github: calderonsamuel)</li>
+            <li>José Incio (Github: jincio)</li>
           </ul>
         </v-card-text>
       </v-card>

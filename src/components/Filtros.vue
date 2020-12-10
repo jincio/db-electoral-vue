@@ -171,7 +171,7 @@
           class="subheading font-weight-regular mb-2 mt2"
           v-show="!$vuetify.breakpoint.xsOnly"
         >
-          ¿Qué buscas en una lista?
+          ¿Qué filtros deseas aplicar?
         </h3>
         <!-- TODO -->
         <v-expansion-panels
@@ -180,8 +180,7 @@
         >
           <v-expansion-panel>
             <v-expansion-panel-header
-              >¿Que los candidatos no tengan
-              sentencias?</v-expansion-panel-header
+              >Descartar listas que lleven candidatos con sentencia</v-expansion-panel-header
             >
             <v-expansion-panel-content>
               <v-row>
@@ -209,8 +208,7 @@
 
           <v-expansion-panel>
             <v-expansion-panel-header>
-              Que no incluya listas del congreso disuelto que fueron electos
-              (2016-2019) por:
+            Descartar listas de partidos responsables de la crísis política del 2019:
             </v-expansion-panel-header>
             <v-expansion-panel-content>
               <v-row>
@@ -219,28 +217,13 @@
                     v-model="f1"
                     @change="updateURLQuery()"
                     color="info"
-                    :label="`Fuerza Popular`"
+                    :label="`Votaron por la vacancia en Noviembre del 2019`"
                   ></v-checkbox>
                   <v-checkbox
                     v-model="f2"
                     @change="updateURLQuery()"
                     color="info"
-                    :label="`Alianza Popular (Apra/PPC)`"
-                  ></v-checkbox>
-                </v-col>
-
-                <v-col>
-                  <v-checkbox
-                    v-model="f3"
-                    @change="updateURLQuery()"
-                    color="info"
-                    :label="`PPK`"
-                  ></v-checkbox>
-                  <v-checkbox
-                    v-model="f4"
-                    @change="updateURLQuery()"
-                    color="info"
-                    :label="`Frente Amplio`"
+                    :label="`No dieron la confianza al gabinete de transición`"
                   ></v-checkbox>
                 </v-col>
               </v-row>
@@ -249,7 +232,7 @@
 
           <v-expansion-panel>
             <v-expansion-panel-header
-              >¿Que promuevan la equidad de género?</v-expansion-panel-header
+              >Descartar listas que no promuevan equidad de género</v-expansion-panel-header
             >
             <v-expansion-panel-content>
               <v-row>
@@ -281,7 +264,7 @@
 
           <v-expansion-panel>
             <v-expansion-panel-header
-              >¿Que promuevan fortalecer Partidos?</v-expansion-panel-header
+              >Descartar listas que no promuevan fortalecer partido</v-expansion-panel-header
             >
             <v-expansion-panel-content>
               <v-row>
@@ -291,14 +274,14 @@
                     @change="updateURLQuery()"
                     color="info"
                     :label="
-                      `Deseo EXCLUIR listas donde el número 1 no fue electo en democracia interna`
+                      `EXCLUIR listas donde el número 1 no fue electo en democracia interna`
                     "
                   ></v-checkbox>
                   <v-checkbox
                     v-model="f11"
                     @change="updateURLQuery()"
                     color="info"
-                    :label="`Excluir partidos sin AGENDA LEGISLATIVA (fuente: Transparencia)`"
+                    :label="`Excluir partidos cuyas internas fueron por delegados`"
                   ></v-checkbox>
                 </v-col>
               </v-row>

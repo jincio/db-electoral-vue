@@ -6,12 +6,10 @@
           <v-card class="ma-3 pa-6 red lighten-3 text-center" outlined tile>
             <h1>Decide Bien</h1>
             <h2>
-              ¿Te cuesta decidir por qué lista al Congreso 2020 votar el próximo
-              26 de Enero?
+            #ReiniciaPeru: filtra los partidos y decide bien. 
             </h2>
             <p>
-              Ingresa tus preferencias usando los siguientes filtros (Sin
-              sentencias judiciales, sin excongresistas, edad, etc).
+            Te ayudamos a procesar la información, utiliza los filtros que te parezcan los más importantes y tengamos un mejor congreso. 
             </p>
           </v-card>
         </v-row>
