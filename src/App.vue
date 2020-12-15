@@ -33,33 +33,19 @@
               @change="filterChanged()"
             ></v-checkbox>
 <p class="text-center pb-2">
-              Que no incluya listas del congreso disuelto  (2016-2019) que fueron electos por:
+              Descartar listas de partidos responsables de la crísis política del 2019
             </p>
             <v-checkbox
               v-model="f1"
               color="info"
-              :label="`Fuerza Popular`"
+              :label="`Votaron por la vacancia en Noviembre del 2019`"
               class="caption my-0 py-0 px-3"
               @change="filterChanged()"
             ></v-checkbox>
             <v-checkbox
               v-model="f2"
               color="info"
-              :label="`Alianza Popular (Apra/PPC)`"
-              class="caption my-0 py-0 px-3"
-              @change="filterChanged()"
-            ></v-checkbox>
-            <v-checkbox
-              v-model="f3"
-              color="info"
-              :label="`PPK`"
-              class="caption my-0 py-0 px-3"
-              @change="filterChanged()"
-            ></v-checkbox>
-            <v-checkbox
-              v-model="f4"
-              color="info"
-              :label="`Frente Amplio`"
+              :label="`No dieron la confianza al gabinete de transición`"
               class="caption my-0 py-0 px-3"
               @change="filterChanged()"
             ></v-checkbox>
@@ -101,7 +87,7 @@
               v-model="f11"
               color="info"
               :label="
-                `Excluir partidos sin AGENDA LEGISLATIVA (fuente: Transparencia)`
+                `Excluir partidos cuyas internas fueron por delegados`
               "
               class="caption my-0 py-0 px-3"
               @change="filterChanged()"

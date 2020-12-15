@@ -208,7 +208,7 @@
 
           <v-expansion-panel>
             <v-expansion-panel-header>
-            Descartar listas de partidos responsables de la crísis política del 2019:
+            Descartar partidos que votaron por la vacancia:
             </v-expansion-panel-header>
             <v-expansion-panel-content>
               <v-row>
@@ -217,13 +217,7 @@
                     v-model="f1"
                     @change="updateURLQuery()"
                     color="info"
-                    :label="`Votaron por la vacancia en Noviembre del 2019`"
-                  ></v-checkbox>
-                  <v-checkbox
-                    v-model="f2"
-                    @change="updateURLQuery()"
-                    color="info"
-                    :label="`No dieron la confianza al gabinete de transición`"
+                    :label="`Descartar partidos que votaron por la vacancia`"
                   ></v-checkbox>
                 </v-col>
               </v-row>
@@ -238,24 +232,16 @@
               <v-row>
                 <v-col>
                   <v-checkbox
-                    v-model="f7"
-                    @change="updateURLQuery()"
-                    color="info"
-                    :label="
-                      `Deseo listas con más de lo requerido en la cuota (> 30%)`
-                    "
-                  ></v-checkbox>
-                  <v-checkbox
                     v-model="f8"
                     @change="updateURLQuery()"
                     color="info"
-                    :label="`Deseo listas con paridad (50%)`"
+                    :label="`Descartar listas que no sean paritarias (50%)`"
                   ></v-checkbox>
                   <v-checkbox
                     v-model="f9"
                     @change="updateURLQuery()"
                     color="info"
-                    :label="`Deseo listas con una mujer como cabeza de lista`"
+                    :label="`Descartar listas que no esten encabezadas por una mujer`"
                   ></v-checkbox>
                 </v-col>
               </v-row>
@@ -274,14 +260,14 @@
                     @change="updateURLQuery()"
                     color="info"
                     :label="
-                      `EXCLUIR listas donde el número 1 no fue electo en democracia interna`
+                      `Descartar listas donde el número 1 no fue electo en democracia interna`
                     "
                   ></v-checkbox>
                   <v-checkbox
                     v-model="f11"
                     @change="updateURLQuery()"
                     color="info"
-                    :label="`Excluir partidos cuyas internas fueron por delegados`"
+                    :label="`Descartar listas cuyas internas fueron por delegados`"
                   ></v-checkbox>
                 </v-col>
               </v-row>
