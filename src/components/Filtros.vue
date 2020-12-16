@@ -180,7 +180,7 @@
         >
           <v-expansion-panel>
             <v-expansion-panel-header
-              >Descartar listas que lleven candidatos con sentencia</v-expansion-panel-header
+              >Descartar listas que lleven candidatos con sentencias</v-expansion-panel-header
             >
             <v-expansion-panel-content>
               <v-row>
@@ -190,22 +190,13 @@
                     @change="updateURLQuery()"
                     color="info"
                     :label="
-                      `Deseo descartar listas que tengan candidat@s con sentencias penales (Declaradas en Hoja de Vida)`
-                    "
-                  ></v-checkbox>
-                  <v-checkbox
-                    v-model="f6"
-                    @change="updateURLQuery()"
-                    color="info"
-                    :label="
-                      `Deseo descartar listas que tengan candidat@s con sentencias alimentarias (Declaradas en Hoja de Vida)`
+                      `Descartar listas que lleven candidatos con sentencias`
                     "
                   ></v-checkbox>
                 </v-col>
               </v-row>
             </v-expansion-panel-content>
           </v-expansion-panel>
-
           <v-expansion-panel>
             <v-expansion-panel-header>
             Descartar partidos que votaron por la vacancia:
@@ -217,7 +208,7 @@
                     v-model="f1"
                     @change="updateURLQuery()"
                     color="info"
-                    :label="`Descartar partidos que votaron por la vacancia`"
+                    :label="`Descartar partidos que votaron por la vacancia (Noviembre 2019)`"
                   ></v-checkbox>
                 </v-col>
               </v-row>
@@ -226,7 +217,7 @@
 
           <v-expansion-panel>
             <v-expansion-panel-header
-              >Descartar listas que no promuevan equidad de género</v-expansion-panel-header
+              >Descartar listas que NO promuevan la equidad de género</v-expansion-panel-header
             >
             <v-expansion-panel-content>
               <v-row>
@@ -235,13 +226,13 @@
                     v-model="f8"
                     @change="updateURLQuery()"
                     color="info"
-                    :label="`Descartar listas que no sean paritarias (50%)`"
+                    :label="`Descartar listas sin paridad (50%)`"
                   ></v-checkbox>
                   <v-checkbox
                     v-model="f9"
                     @change="updateURLQuery()"
                     color="info"
-                    :label="`Descartar listas que no esten encabezadas por una mujer`"
+                    :label="`Descartar listas sin alternancia`"
                   ></v-checkbox>
                 </v-col>
               </v-row>
@@ -250,7 +241,7 @@
 
           <v-expansion-panel>
             <v-expansion-panel-header
-              >Descartar listas que no promuevan fortalecer partido</v-expansion-panel-header
+              >Descartar listas que NO promuevan democracia interna</v-expansion-panel-header
             >
             <v-expansion-panel-content>
               <v-row>
@@ -267,7 +258,7 @@
                     v-model="f11"
                     @change="updateURLQuery()"
                     color="info"
-                    :label="`Descartar listas cuyas internas fueron por delegados`"
+                    :label="`Descartar listas cuyas primarias fueron por delegados`"
                   ></v-checkbox>
                 </v-col>
               </v-row>

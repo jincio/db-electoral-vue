@@ -12,49 +12,33 @@
         <v-list-item>
           <v-list-item-content>
             <p class="text-center pb-2">
-              ¿Que los candidatos no tengan sentencias?
+              Descartar listas que lleven candidatos con sentencias
             </p>
             <v-checkbox
               v-model="f5"
               color="info"
               :label="
-                `Deseo descartar listas que tengan candidat@s con sentencias penales (Declaradas en Hoja de Vida)`
+                `Descartar listas que lleven candidatos con sentencias`
               "
               class="caption my-0 py-0 px-3"
               @change="filterChanged()"
             ></v-checkbox>
-            <v-checkbox
-              v-model="f6"
-              color="info"
-              :label="
-                `Deseo descartar listas que tengan candidat@s con sentencias alimentarias (Declaradas en Hoja de Vida)`
-              "
-              class="caption my-0 py-0 px-3"
-              @change="filterChanged()"
-            ></v-checkbox>
-<p class="text-center pb-2">
-              Descartar listas de partidos responsables de la crísis política del 2019
+            <p class="text-center pb-2">
+              Descartar partidos que votaron por la vacancia:
             </p>
             <v-checkbox
               v-model="f1"
               color="info"
-              :label="`Votaron por la vacancia en Noviembre del 2019`"
+              :label="`Descartar partidos que votaron por la vacancia (Noviembre 2019)`"
               class="caption my-0 py-0 px-3"
               @change="filterChanged()"
             ></v-checkbox>
-            <v-checkbox
-              v-model="f2"
-              color="info"
-              :label="`No dieron la confianza al gabinete de transición`"
-              class="caption my-0 py-0 px-3"
-              @change="filterChanged()"
-            ></v-checkbox>
-            <p class="text-center pb-2">¿Que promuevan la equidad de género?</p>
+            <p class="text-center pb-2">Descartar listas que NO promuevan la equidad de género</p>
             <v-checkbox
               v-model="f7"
               color="info"
               :label="
-                `Deseo listas con más de lo requerido en la cuota (> 30%)`
+                `Descartar listas sin paridad (50%)`
               "
               class="caption my-0 py-0 px-3"
               @change="filterChanged()"
@@ -62,23 +46,16 @@
             <v-checkbox
               v-model="f8"
               color="info"
-              :label="`Deseo listas con paridad (50%)`"
+              :label="`Descartar listas sin alternancia`"
               class="caption my-0 py-0 px-3"
               @change="filterChanged()"
             ></v-checkbox>
-            <v-checkbox
-              v-model="f9"
-              color="info"
-              :label="`Deseo listas con una mujer como cabeza de lista`"
-              class="caption my-0 py-0 px-3"
-              @change="filterChanged()"
-            ></v-checkbox>
-            <p class="text-center pb-2">¿Que promuevan fortalecer Partidos?</p>
+            <p class="text-center pb-2">Descartar partidos que NO promuevan su democracia interna</p>
             <v-checkbox
               v-model="f10"
               color="info"
               :label="
-                `Deseo EXCLUIR listas donde el número 1 no fue electo en democracia interna`
+                `Descartar listas donde el número 1 no fue electo en democracia interna`
               "
               class="caption my-0 py-0 px-3"
               @change="filterChanged()"
@@ -87,7 +64,7 @@
               v-model="f11"
               color="info"
               :label="
-                `Excluir partidos cuyas internas fueron por delegados`
+                `Descartar listas cuyas primarias fueron por delegados`
               "
               class="caption my-0 py-0 px-3"
               @change="filterChanged()"

@@ -9,7 +9,7 @@
             #ReiniciaPeru: filtra los partidos y decide bien. 
             </h2>
             <p>
-            Te ayudamos a procesar la información, utiliza los filtros que te parezcan los más importantes y tengamos un mejor congreso. 
+            Primero el equipo luego el jugador! Utiliza los filtros que te parezcan los más importantes y tengamos un mejor congreso. 
             </p>
           </v-card>
         </v-row>
