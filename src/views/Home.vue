@@ -4,7 +4,9 @@
       <v-col cols="12">
         <v-row align="start" justify="center">
           <v-card class="ma-3 pa-6 red lighten-3 text-center" outlined tile>
-            <h1>Decide Bien</h1>
+            <div>
+            <img class="logo" src="../assets/logo3.png"/>
+            </div>
             <h2>
             #ReiniciaPeru: filtra los partidos y decide bien. 
             </h2>
